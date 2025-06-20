@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-externaldns-demo
+  name: ingress-externaldns-portfolio
   namespace: mobily
   annotations:
     # Load Balancer Name
@@ -30,7 +30,7 @@ spec:
   ingressClassName: alb   # Ingress Class                  
   defaultBackend:
     service:
-      name: eks-devops-nodeport-service
+      name: portfolio-nodeport-service
       port:
         number: 80     
 
