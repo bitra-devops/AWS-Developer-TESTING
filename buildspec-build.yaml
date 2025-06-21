@@ -3,7 +3,7 @@ version: 0.2
 
 env:
   variables:
-    IMAGE_URI: "799618983059.dkr.ecr.us-east-1.amazonaws.com/eks-demo/communitypro-portfolio-og:latest"
+    IMAGE_URI: "799618983059.dkr.ecr.us-east-1.amazonaws.com/eks-demo/communitypro-portfolio-og"
   exported-variables:
     - IMAGE_URI
     - IMAGE_TAG
