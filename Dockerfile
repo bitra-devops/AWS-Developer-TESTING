@@ -5,13 +5,13 @@ FROM node:20-alpine
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+COPY ./portfolio-html/package*.json ./
 
 # Install app dependencies
 RUN npm install
 
 # Copy the rest of the application code
-COPY ./src .
+COPY ./portfolio-html/src .
 
 # Expose the port your app runs on
 EXPOSE 8080
